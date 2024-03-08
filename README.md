@@ -17,3 +17,6 @@
 ![](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 ![](https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
+
+
+![ayden's GitHub stats](https://github-readme-stats.vercel.app/api?username=ayden94&theme=dark&show_icons=true)
