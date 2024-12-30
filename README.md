@@ -29,8 +29,8 @@ state management tool :
 ![](https://img.shields.io/badge/reactquery-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
 ![](https://img.shields.io/badge/zustand-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![](https://img.shields.io/badge/Jotai-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![](https://img.shields.io/badge/Sicilian-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![](https://img.shields.io/badge/CaroKann-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![](https://img.shields.io/badge/CaroKann-f4f3c8?style=for-the-badge&logo=Lichess&logoColor=414193)
+![](https://img.shields.io/badge/Sicilian-232f3e?style=for-the-badge&logo=Lichess&logoColor=ff9900)
 
 
 co-work : 
