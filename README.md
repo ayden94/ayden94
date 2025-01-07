@@ -9,7 +9,7 @@
 
 # 기술 스택
 language : 
-![](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=gray) 
+![](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=gray)
 ![](https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 frontend : 
@@ -29,8 +29,8 @@ state management tool :
 ![](https://img.shields.io/badge/reactquery-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
 ![](https://img.shields.io/badge/zustand-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![](https://img.shields.io/badge/Jotai-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![](https://img.shields.io/badge/CaroKann-f4f3c8?style=for-the-badge&logo=Lichess&logoColor=414193)
-![](https://img.shields.io/badge/Sicilian-232f3e?style=for-the-badge&logo=Lichess&logoColor=ff9900)
+[![](https://img.shields.io/badge/CaroKann-f4f3c8?style=for-the-badge&logo=Lichess&logoColor=414193)](https://github.com/ayden94/caro-kann)
+[![](https://img.shields.io/badge/Sicilian-232f3e?style=for-the-badge&logo=Lichess&logoColor=ff9900)](https://github.com/ayden94/sicilian)
 
 
 co-work : 
