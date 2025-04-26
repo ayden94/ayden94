@@ -6,6 +6,7 @@
 
 * React 전역 상태 관리 도구 **Caro-Kann**과 입력폼 관리 도구 **Sicilian**의 메인테이너
 * 독후감 작성 및 공유 서비스 onef 운영 중
+* AWS 공인 Solution Architect
 
 # 기술 스택
 language : 
