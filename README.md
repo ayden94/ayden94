@@ -1,53 +1,78 @@
-### Hi there 👋
+# 정진호 / Ayden
 
-# 자기 소개
-코드 바깥의 커뮤니케이션을 중시하는 **개발자 정진호**입니다. 더 나은 서비스를 제공하기 위해서는 개발자가 본인이 속한 영역 뿐만 아니라 동료가 속한 분야에 대해 깊게 이해하고 있어야 한다고 믿습니다.
-&nbsp;
+복잡한 개발 경험을 작은 인터페이스로 풀어내는 TypeScript 개발자입니다.
 
-* React 전역 상태 관리 도구 **Caro-Kann**과 입력폼 관리 도구 **Sicilian**의 메인테이너
-* 독후감 작성 및 공유 서비스 onef 운영 중
-* AWS 공인 Solution Architect
+상태 관리, 폼 상태, 프레임워크에 덜 의존적인 도구 설계에 관심이 많고, 직접 만든 라이브러리와 기술 글쓰기를 통해 개발자 경험을 개선하는 일을 좋아합니다.
 
-# 기술 스택
-language : 
-![](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=gray)
-![](https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+> I build small tools for better developer experience — mostly around TypeScript, state management, forms, and frontend architecture.
 
-frontend : 
-![](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=React&logoColor=%2361DAFB)
-![](https://img.shields.io/badge/nextjs-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![](https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white)
-![](https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+---
 
+## Current focus
 
-backend : 
-![](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)
-![](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![](https://img.shields.io/badge/jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+### ilokesto
 
+`ilokesto`는 상태 관리와 폼 상태처럼 여러 프레임워크에서 반복되는 문제를 작고 명확한 TypeScript 도구로 다루기 위한 프로젝트입니다.
 
-state management tool : 
-![](https://img.shields.io/badge/reactquery-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
-![](https://img.shields.io/badge/zustand-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![](https://img.shields.io/badge/Jotai-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-[![](https://img.shields.io/badge/CaroKann-f4f3c8?style=for-the-badge&logo=Lichess&logoColor=414193)](https://github.com/ayden94/caro-kann)
-[![](https://img.shields.io/badge/Sicilian-232f3e?style=for-the-badge&logo=Lichess&logoColor=ff9900)](https://github.com/ayden94/sicilian)
+프레임워크별 어댑터는 얇게 유지하고, 핵심 로직은 가능한 한 프레임워크에 의존하지 않게 설계하려고 합니다.
 
+| Project | Description |
+| --- | --- |
+| [`@ilokesto/state`](https://github.com/ilokesto/state) | React, Vue, Angular, Svelte, Solid를 위한 multi-framework state helper |
+| [`@ilokesto/form`](https://github.com/ilokesto/form) | form values, field metadata, validation, array fields를 다루는 framework-agnostic form core |
 
-co-work : 
-![](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)
-![](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+---
 
+## What I care about
 
-AWS : 
-![](https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![](https://img.shields.io/badge/awselasticloadbalancing-8C4FFF?style=for-the-badge&logo=awselasticloadbalancing&logoColor=white)
-![](https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![](https://img.shields.io/badge/amazonroute53-8C4FFF?style=for-the-badge&logo=amazonroute53&logoColor=white)
+- 복잡한 개념을 이해하기 쉬운 언어로 설명하기
+- 프레임워크에 강하게 묶이지 않는 구조 설계하기
+- 작고 예측 가능한 API 만들기
+- 상태 관리와 폼 상태처럼 반복되는 문제를 더 단순하게 다루기
+- 코드뿐 아니라 문서, 예제, 네이밍까지 포함한 개발자 경험 개선하기
 
+---
 
-&nbsp;
+## Writing
+
+기술을 단순히 사용하는 것보다, 왜 그렇게 설계했는지 설명하고 공유하는 일을 중요하게 생각합니다.
+
+블로그에서는 주로 이런 주제를 다룹니다.
+
+- 프론트엔드 아키텍처
+- 상태 관리
+- 의존성 주입과 설계 패턴
+- TypeScript 라이브러리 설계
+- 개발자 경험과 기술 의사결정
+
+[ayden94.com](https://ayden94.com)
+
+---
+
+## Core stack
+
+```txt
+Language    TypeScript, JavaScript
+Frontend    React, Next.js
+Backend     Node.js, Express, NestJS
+Testing     Jest, Vitest
+Infra       AWS, Vercel, Netlify
+Tools       Git, GitHub, pnpm
+```
+
+---
+
+## Certification
+
+- AWS Certified Solutions Architect
+
+---
+
+## Links
+
+- Blog: [ayden94.com](https://ayden94.com)
+- GitHub: [github.com/ayden94](https://github.com/ayden94)
+
+---
 
 ![ayden's GitHub stats](https://github-readme-stats.vercel.app/api?username=ayden94&theme=dark&show_icons=true)
