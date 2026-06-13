@@ -2,9 +2,9 @@
 
 복잡한 개발 경험을 작은 인터페이스로 풀어내는 TypeScript 개발자입니다.
 
-상태 관리, 폼 상태, 프레임워크에 덜 의존적인 도구 설계에 관심이 많고, 직접 만든 라이브러리와 기술 글쓰기를 통해 개발자 경험을 개선하는 일을 좋아합니다.
+상태 관리, 폼 상태, 표준 지향 백엔드 프레임워크처럼 반복되는 개발 문제를 작고 예측 가능한 도구로 다루는 일에 관심이 많습니다.
 
-> I build small tools for better developer experience — mostly around TypeScript, state management, forms, and frontend architecture.
+> I build small tools for better developer experience — mostly around TypeScript, state management, forms, and standard-first backend architecture.
 
 ---
 
@@ -14,21 +14,28 @@
 
 `ilokesto`는 상태 관리와 폼 상태처럼 여러 프레임워크에서 반복되는 문제를 작고 명확한 TypeScript 도구로 다루기 위한 프로젝트입니다.
 
-프레임워크별 어댑터는 얇게 유지하고, 핵심 로직은 가능한 한 프레임워크에 의존하지 않게 설계하려고 합니다.
+핵심 로직은 프레임워크에 의존하지 않게 두고, 각 프레임워크 어댑터는 가능한 한 얇게 유지하는 방향으로 설계하고 있습니다.
 
-| Project | Description |
+| Package | Role |
 | --- | --- |
-| [`@ilokesto/state`](https://github.com/ilokesto/state) | React, Vue, Angular, Svelte, Solid를 위한 multi-framework state helper |
-| [`@ilokesto/form`](https://github.com/ilokesto/form) | form values, field metadata, validation, array fields를 다루는 framework-agnostic form core |
+| [`@ilokesto/store`](https://github.com/ilokesto/store) | vanilla TypeScript store core for state storage, updates, subscriptions, and middleware |
+| [`@ilokesto/state`](https://github.com/ilokesto/state) | multi-framework state helper for React, Vue, Angular, Svelte, and Solid |
+| [`@ilokesto/form`](https://github.com/ilokesto/form) | framework-agnostic form core for values, field metadata, validation, and array fields |
+
+### fluo
+
+[`fluo`](https://github.com/fluojs/fluo)는 Standard-First TypeScript Backend Framework입니다.
+
+표준 Decorator, DI, 런타임 독립적인 백엔드 구조를 중심으로 TypeScript 서버 프레임워크의 설계 가능성을 실험하고 있습니다.
 
 ---
 
 ## What I care about
 
 - 복잡한 개념을 이해하기 쉬운 언어로 설명하기
-- 프레임워크에 강하게 묶이지 않는 구조 설계하기
+- 프레임워크와 런타임에 강하게 묶이지 않는 구조 설계하기
 - 작고 예측 가능한 API 만들기
-- 상태 관리와 폼 상태처럼 반복되는 문제를 더 단순하게 다루기
+- 상태 관리, 폼 상태, 백엔드 프레임워크처럼 반복되는 문제를 더 단순하게 다루기
 - 코드뿐 아니라 문서, 예제, 네이밍까지 포함한 개발자 경험 개선하기
 
 ---
@@ -72,6 +79,7 @@ Tools       Git, GitHub, pnpm
 
 - Blog: [ayden94.com](https://ayden94.com)
 - GitHub: [github.com/ayden94](https://github.com/ayden94)
+- LinkedIn: [jinho-jeong-8ab999345](https://www.linkedin.com/in/jinho-jeong-8ab999345/)
 
 ---
 
