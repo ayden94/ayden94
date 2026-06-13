@@ -12,21 +12,30 @@
 
 ### ilokesto
 
-`ilokesto`는 상태 관리와 폼 상태처럼 여러 프레임워크에서 반복되는 문제를 작고 명확한 TypeScript 도구로 다루기 위한 프로젝트입니다.
+[`ilokesto`](https://github.com/ilokesto)는 여러 프레임워크에서 반복되는 UI, 상태, 폼, 네트워크 문제를 작고 명확한 TypeScript 패키지로 나누어 다루는 OSS 생태계입니다.
 
 핵심 로직은 프레임워크에 의존하지 않게 두고, 각 프레임워크 어댑터는 가능한 한 얇게 유지하는 방향으로 설계하고 있습니다.
 
-| Package | Role |
+| Area | Packages |
 | --- | --- |
-| [`@ilokesto/store`](https://github.com/ilokesto/store) | vanilla TypeScript store core for state storage, updates, subscriptions, and middleware |
-| [`@ilokesto/state`](https://github.com/ilokesto/state) | multi-framework state helper for React, Vue, Angular, Svelte, and Solid |
-| [`@ilokesto/form`](https://github.com/ilokesto/form) | framework-agnostic form core for values, field metadata, validation, and array fields |
+| State & form core | [`@ilokesto/store`](https://github.com/ilokesto/store), [`@ilokesto/state`](https://github.com/ilokesto/state), [`@ilokesto/form`](https://github.com/ilokesto/form) |
+| UI primitives | [`@ilokesto/utilinent`](https://github.com/ilokesto/utilinent), [`@ilokesto/overlay`](https://github.com/ilokesto/overlay), [`@ilokesto/modal`](https://github.com/ilokesto/modal), [`@ilokesto/toast`](https://github.com/ilokesto/toast) |
+| Utilities & networking | [`@ilokesto/fetcher`](https://github.com/ilokesto/fetcher) and smaller supporting packages |
+
+이전의 `Caro-Kann`, `Sicilian`, `Grunfeld` 같은 실험은 현재의 `state`, `form`, `overlay/modal/toast` 패키지군으로 재정리하고 있습니다.
 
 ### fluo
 
 [`fluo`](https://github.com/fluojs/fluo)는 Standard-First TypeScript Backend Framework입니다.
 
-표준 Decorator, DI, 런타임 독립적인 백엔드 구조를 중심으로 TypeScript 서버 프레임워크의 설계 가능성을 실험하고 있습니다.
+표준 Decorator, DI, 설정, 검증, 직렬화, OpenAPI, 인증, 런타임 어댑터를 하나의 모듈러 백엔드 프레임워크로 설계하고 있습니다. Node.js, Bun, Deno, Cloudflare Workers 같은 런타임을 염두에 두고, 프레임워크 코어와 플랫폼 어댑터를 분리하는 구조를 실험합니다.
+
+`fluo`의 관심사는 단순한 라우터가 아니라, 백엔드 애플리케이션을 구성하는 패키지 표면 전체입니다.
+
+- Core: DI, config, i18n, runtime
+- HTTP: routing, validation, serialization, OpenAPI, GraphQL
+- Auth & platform: JWT, Passport, Fastify, Express, Node.js, Bun, Deno, Cloudflare Workers
+- Tooling: CLI, testing, examples, documentation
 
 ---
 
