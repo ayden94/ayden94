@@ -32,10 +32,12 @@
 
 `fluo`의 관심사는 단순한 라우터가 아니라, 백엔드 애플리케이션을 구성하는 패키지 표면 전체입니다.
 
-- Core: DI, config, i18n, runtime
-- HTTP: routing, validation, serialization, OpenAPI, GraphQL
-- Auth & platform: JWT, Passport, Fastify, Express, Node.js, Bun, Deno, Cloudflare Workers
-- Tooling: CLI, testing, examples, documentation
+| Area | Packages / scope |
+| --- | --- |
+| Core | DI, config, i18n, runtime |
+| HTTP | routing, validation, serialization, OpenAPI, GraphQL |
+| Auth & platform | JWT, Passport, Fastify, Express, Node.js, Bun, Deno, Cloudflare Workers |
+| Tooling | CLI, testing, examples, documentation |
 
 ---
 
