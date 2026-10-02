@@ -4,8 +4,8 @@
   <rect x="0.5" y="0.5" width="959" height="279" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
   <path d="M640 0v280M0 226h960" stroke="#d1d9e0" stroke-width="1"/>
   <text x="42" y="47" fill="#59636e" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">DEVELOPER / AUTHOR</text>
-  <text x="36" y="160" fill="#9e4c32" font-family="Georgia, 'Times New Roman', serif" font-size="118" letter-spacing="-5">Ayden.</text>
-  <text x="42" y="201" fill="#1f2328" font-family="Arial, Helvetica, sans-serif" font-size="22">Thoughtful code. Shared knowledge.</text>
+  <text x="40" y="148" fill="#9e4c32" font-family="Georgia, 'Times New Roman', serif" font-size="102">Ayden.</text>
+  <text x="42" y="205" fill="#1f2328" font-family="Arial, Helvetica, sans-serif" font-size="22">Thoughtful code. Shared knowledge.</text>
   <text x="42" y="259" fill="#59636e" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">TYPESCRIPT · REACT · DEVELOPER EXPERIENCE</text>
   <g fill="none" stroke="#788591" stroke-width="1.5">
     <path d="M706 61h-16v110h16M888 61h16v110h-16"/>
