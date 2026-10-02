@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ayden — developer and author</title>
+  <desc id="desc">A charcoal banner with warm coral lettering: Ayden. Thoughtful code. Shared knowledge.</desc>
+  <rect width="640" height="300" rx="12" fill="#202523"/>
+  <text x="36" y="47" fill="#b8c4bb" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="3">DEVELOPER / AUTHOR</text>
+  <text x="30" y="168" fill="#efb298" font-family="Georgia, 'Times New Roman', serif" font-size="124" letter-spacing="-5">Ayden.</text>
+  <text x="36" y="219" fill="#e5e9e2" font-family="Arial, Helvetica, sans-serif" font-size="26">Thoughtful code. Shared knowledge.</text>
+  <path d="M0 247h640" stroke="#39413c"/>
+  <text x="36" y="281" fill="#b8c4bb" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="2">TYPESCRIPT / REACT / DX</text>
+</svg>
