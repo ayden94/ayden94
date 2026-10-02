@@ -1,11 +1,11 @@
 <p align="right"><a href="./README.md">English</a> &nbsp; / &nbsp; <strong>한국어</strong></p>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg">
+  <source media="(max-width: 900px)" srcset="./assets/header-mobile.svg">
   <img src="./assets/header.svg" alt="Ayden — 개발자이자 저자. 사려 깊은 코드와 지식의 공유." width="100%">
 </picture>
 
-# 안녕하세요, Ayden입니다.
+# 정진호 / Ayden
 
 **정진호 · TypeScript 개발자**<br>
 『모던 리액트 디자인 패턴』 저자
@@ -75,20 +75,25 @@
 
 코드, 문서, 수정 제안으로 참여한 프로젝트입니다.
 
-**[stableref](https://github.com/JoviDeCroock/stableref)** &nbsp; / &nbsp;
-**[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)** &nbsp; / &nbsp;
-**[senpi](https://github.com/code-yeongyu/senpi)** &nbsp; / &nbsp;
-**[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** &nbsp; / &nbsp;
-**[open-code-review](https://github.com/alibaba/open-code-review)**
+- **[stableref](https://github.com/JoviDeCroock/stableref)**
+- **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)**
+- **[senpi](https://github.com/code-yeongyu/senpi)**
+- **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)**
+- **[open-code-review](https://github.com/alibaba/open-code-review)**
 
 ## 계속 고민하는 것들
 
-| 관심사 | 탐구하는 문제 |
-| :--- | :--- |
-| **프론트엔드 아키텍처** | 컴포넌트 경계, 상태의 소유권, 애플리케이션이 커져도 이해하기 쉬운 구조. |
-| **라이브러리 설계** | 작은 API, 유용한 타입 추론, 하나의 프레임워크에 묶이지 않는 코어. |
-| **개발자 경험** | 다음 사람의 작업을 쉽게 만드는 도구, 문서, 예제, 네이밍. |
-| **AI를 활용한 개발** | 실제 개발 흐름에 맞는 코딩 에이전트와 리뷰 도구. |
+**프론트엔드 아키텍처**<br>
+컴포넌트 경계, 상태의 소유권, 애플리케이션이 커져도 이해하기 쉬운 구조.
+
+**라이브러리 설계**<br>
+작은 API, 유용한 타입 추론, 하나의 프레임워크에 묶이지 않는 코어.
+
+**개발자 경험**<br>
+다음 사람의 작업을 쉽게 만드는 도구, 문서, 예제, 네이밍.
+
+**AI를 활용한 개발**<br>
+실제 개발 흐름에 맞는 코딩 에이전트와 리뷰 도구.
 
 ## 글쓰기
 
@@ -103,11 +108,11 @@
 | 분야 | 기술 |
 | :--- | :--- |
 | 언어 | TypeScript · JavaScript |
-| 프론트엔드 | React · Next.js |
-| 백엔드 | Node.js · Express · NestJS |
+| UI | React · Next.js |
+| 서버 | Node.js · Express · NestJS |
 | 테스트 | Jest · Vitest |
 | 인프라 | AWS · Vercel · Netlify |
-| 개발 도구 | Git · GitHub · pnpm |
+| 도구 | Git · GitHub · pnpm |
 
 **AWS Certified Solutions Architect**
 

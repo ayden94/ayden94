@@ -1,7 +1,7 @@
 <p align="right"><strong>English</strong> &nbsp; / &nbsp; <a href="./README.ko.md">한국어</a></p>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg">
+  <source media="(max-width: 900px)" srcset="./assets/header-mobile.svg">
   <img src="./assets/header.svg" alt="Ayden — developer and author. Thoughtful code. Shared knowledge." width="100%">
 </picture>
 
@@ -75,20 +75,25 @@ An exploration of the whole backend application surface, not just routing. I use
 
 Projects I've contributed to through code, documentation, and proposed fixes.
 
-**[stableref](https://github.com/JoviDeCroock/stableref)** &nbsp; / &nbsp;
-**[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)** &nbsp; / &nbsp;
-**[senpi](https://github.com/code-yeongyu/senpi)** &nbsp; / &nbsp;
-**[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** &nbsp; / &nbsp;
-**[open-code-review](https://github.com/alibaba/open-code-review)**
+- **[stableref](https://github.com/JoviDeCroock/stableref)**
+- **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)**
+- **[senpi](https://github.com/code-yeongyu/senpi)**
+- **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)**
+- **[open-code-review](https://github.com/alibaba/open-code-review)**
 
 ## Ideas I keep coming back to
 
-| Focus | What interests me |
-| :--- | :--- |
-| **Frontend architecture** | Component boundaries, state ownership, and structures that stay understandable as applications grow. |
-| **Library design** | Small APIs, useful type inference, and cores that are not tied to a single framework. |
-| **Developer experience** | Tools, documentation, examples, and naming that make the next person's work easier. |
-| **AI-assisted development** | Coding agents and review tools that fit into real development workflows. |
+**Frontend architecture**<br>
+Component boundaries, state ownership, and structures that stay understandable as applications grow.
+
+**Library design**<br>
+Small APIs, useful type inference, and cores that are not tied to a single framework.
+
+**Developer experience**<br>
+Tools, documentation, examples, and naming that make the next person's work easier.
+
+**AI-assisted development**<br>
+Coding agents and review tools that fit into real development workflows.
 
 ## Writing
 
