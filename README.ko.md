@@ -64,9 +64,9 @@
 | :--- | :--- |
 | **[stableref](https://github.com/JoviDeCroock/stableref)** | React 훅 |
 | **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)** | 상태 관리 |
-| **[senpi](https://github.com/code-yeongyu/senpi)** | 코딩 에이전트 |
+| **[senpi](https://github.com/code-yeongyu/senpi)** | 코딩<br>에이전트 |
 | **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** | AI 에이전트 |
-| **[open-code-review](https://github.com/alibaba/open-code-review)** | AI 코드 리뷰 |
+| **[open-code-review](https://github.com/alibaba/open-code-review)** | AI<br>코드 리뷰 |
 
 ## 계속 고민하는 것들
 
