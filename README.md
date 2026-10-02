@@ -1,10 +1,10 @@
 <p align="right"><strong>English</strong> &nbsp; / &nbsp; <a href="./README.ko.md">한국어</a></p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 900px)" srcset="./assets/header-mobile.svg">
-  <source media="(max-width: 900px)" srcset="./assets/header-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header.svg">
-  <img src="./assets/header-light.svg" alt="Ayden — developer and author. Thoughtful code. Shared knowledge." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 900px)" srcset="./assets/header/mobile-dark.svg">
+  <source media="(max-width: 900px)" srcset="./assets/header/mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header/desktop-dark.svg">
+  <img src="./assets/header/desktop-light.svg" alt="Ayden — developer and author. Thoughtful code. Shared knowledge." width="100%">
 </picture>
 
 # Hi, I'm Ayden.

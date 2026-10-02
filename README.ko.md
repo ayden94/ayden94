@@ -1,10 +1,10 @@
 <p align="right"><a href="./README.md">English</a> &nbsp; / &nbsp; <strong>한국어</strong></p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 900px)" srcset="./assets/header-mobile.svg">
-  <source media="(max-width: 900px)" srcset="./assets/header-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header.svg">
-  <img src="./assets/header-light.svg" alt="Ayden — 개발자이자 저자. 사려 깊은 코드와 지식의 공유." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 900px)" srcset="./assets/header/mobile-dark.svg">
+  <source media="(max-width: 900px)" srcset="./assets/header/mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header/desktop-dark.svg">
+  <img src="./assets/header/desktop-light.svg" alt="Ayden — 개발자이자 저자. 사려 깊은 코드와 지식의 공유." width="100%">
 </picture>
 
 # 정진호 / Ayden
