@@ -1,8 +1,10 @@
 <p align="right"><a href="./README.md">English</a> &nbsp; / &nbsp; <strong>한국어</strong></p>
 
 <picture>
-  <source media="(max-width: 900px)" srcset="./assets/header-mobile.svg">
-  <img src="./assets/header.svg" alt="Ayden — 개발자이자 저자. 사려 깊은 코드와 지식의 공유." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 900px)" srcset="./assets/header-mobile.svg">
+  <source media="(max-width: 900px)" srcset="./assets/header-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header.svg">
+  <img src="./assets/header-light.svg" alt="Ayden — 개발자이자 저자. 사려 깊은 코드와 지식의 공유." width="100%">
 </picture>
 
 # 정진호 / Ayden
@@ -47,27 +49,10 @@
 
 ## 만드는 프로젝트
 
-### [ilokesto](https://github.com/ilokesto)
-
-**작은 패키지, 명확한 책임.**
-
-반복해서 마주치는 UI, 상태, 폼, 네트워크 문제를 다루는 TypeScript 생태계입니다. 핵심 로직은 프레임워크에 의존하지 않게, 어댑터는 얇게 유지해 같은 아이디어를 다양한 환경에서 사용할 수 있도록 만듭니다.
-
-- **상태와 폼** — 예측 가능한 스토어, 상태 전이, 폼 동작.
-- **UI 프리미티브** — 조합해서 사용할 수 있는 오버레이, 모달, 토스트.
-- **네트워킹** — 역할이 명확한 fetch 유틸리티와 보조 패키지.
-
-[`store`](https://github.com/ilokesto/store) · [`state`](https://github.com/ilokesto/state) · [`form`](https://github.com/ilokesto/form) · [`overlay`](https://github.com/ilokesto/overlay) · [`fetcher`](https://github.com/ilokesto/fetcher)
-
-### [fluo](https://github.com/fluojs/fluo)
-
-**표준을 우선하는 TypeScript 백엔드 프레임워크.**
-
-라우팅뿐 아니라 백엔드 애플리케이션을 구성하는 전체 영역을 탐구합니다. 표준 데코레이터와 모듈 경계를 바탕으로 의존성 주입, 설정, 검증, 직렬화, API 문서화를 하나의 구조로 연결합니다.
-
-- **애플리케이션 기반** — DI, 설정, 재사용 가능한 모듈.
-- **HTTP와 API** — 라우팅, 검증, 직렬화, OpenAPI.
-- **런타임 경계** — 코어와 플랫폼 어댑터를 분리하고 Node.js, Bun, Deno, Cloudflare Workers를 고려하는 설계.
+| 프로젝트 | 만드는 것과 설계 방향 |
+| :--- | :--- |
+| **[ilokesto](https://github.com/ilokesto)** | **작은 패키지, 명확한 책임.**<br><br>상태, 폼, UI, 네트워크 문제를 다루는 TypeScript 생태계입니다. 프레임워크에 의존하지 않는 코어와 얇은 어댑터로 같은 아이디어를 다양한 환경에서 사용할 수 있도록 만듭니다.<br><br>**상태와 폼** — 예측 가능한 스토어, 상태 전이, 폼 동작.<br>**UI** — 조합 가능한 오버레이, 모달, 토스트.<br>**네트워킹** — 역할이 명확한 fetch 유틸리티.<br><br>[`store`](https://github.com/ilokesto/store) · [`state`](https://github.com/ilokesto/state) · [`form`](https://github.com/ilokesto/form) · [`overlay`](https://github.com/ilokesto/overlay) · [`fetcher`](https://github.com/ilokesto/fetcher) |
+| **[fluo](https://github.com/fluojs/fluo)** | **표준을 우선하는 TypeScript 백엔드 프레임워크.**<br><br>라우팅뿐 아니라 백엔드 애플리케이션을 구성하는 전체 영역을 탐구합니다. 표준 데코레이터와 모듈 경계로 애플리케이션의 구성 요소를 연결합니다.<br><br>**기반** — DI, 설정, 재사용 가능한 모듈.<br>**HTTP와 API** — 라우팅, 검증, 직렬화, OpenAPI.<br>**런타임** — 코어와 플랫폼 어댑터를 분리하고 Node.js, Bun, Deno, Cloudflare Workers를 고려하는 설계. |
 
 <br>
 
@@ -75,11 +60,13 @@
 
 코드, 문서, 수정 제안으로 참여한 프로젝트입니다.
 
-- **[stableref](https://github.com/JoviDeCroock/stableref)**
-- **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)**
-- **[senpi](https://github.com/code-yeongyu/senpi)**
-- **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)**
-- **[open-code-review](https://github.com/alibaba/open-code-review)**
+| 프로젝트 | 분야 |
+| :--- | :--- |
+| **[stableref](https://github.com/JoviDeCroock/stableref)** | React 훅 |
+| **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)** | 상태 관리 |
+| **[senpi](https://github.com/code-yeongyu/senpi)** | 코딩 에이전트 |
+| **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** | AI 에이전트 |
+| **[open-code-review](https://github.com/alibaba/open-code-review)** | AI 코드 리뷰 |
 
 ## 계속 고민하는 것들
 

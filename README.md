@@ -1,8 +1,10 @@
 <p align="right"><strong>English</strong> &nbsp; / &nbsp; <a href="./README.ko.md">한국어</a></p>
 
 <picture>
-  <source media="(max-width: 900px)" srcset="./assets/header-mobile.svg">
-  <img src="./assets/header.svg" alt="Ayden — developer and author. Thoughtful code. Shared knowledge." width="100%">
+  <source media="(prefers-color-scheme: dark) and (max-width: 900px)" srcset="./assets/header-mobile.svg">
+  <source media="(max-width: 900px)" srcset="./assets/header-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header.svg">
+  <img src="./assets/header-light.svg" alt="Ayden — developer and author. Thoughtful code. Shared knowledge." width="100%">
 </picture>
 
 # Hi, I'm Ayden.
@@ -47,27 +49,10 @@ In this book, I explore component structure, state management, reusable logic, a
 
 ## What I'm building
 
-### [ilokesto](https://github.com/ilokesto)
-
-**Small packages. Clear responsibilities.**
-
-A TypeScript ecosystem for recurring UI, state, form, and networking problems. I keep the core logic independent of frameworks and the adapters thin, so the same ideas can work across different environments.
-
-- **State & forms** — predictable stores, state transitions, and form behavior.
-- **UI primitives** — composable overlays, modals, and toasts.
-- **Networking** — focused fetch utilities and supporting packages.
-
-[`store`](https://github.com/ilokesto/store) · [`state`](https://github.com/ilokesto/state) · [`form`](https://github.com/ilokesto/form) · [`overlay`](https://github.com/ilokesto/overlay) · [`fetcher`](https://github.com/ilokesto/fetcher)
-
-### [fluo](https://github.com/fluojs/fluo)
-
-**A standard-first TypeScript backend framework.**
-
-An exploration of the whole backend application surface, not just routing. I use standard decorators and modular boundaries to bring dependency injection, configuration, validation, serialization, and API documentation together.
-
-- **Application foundations** — DI, configuration, and reusable modules.
-- **HTTP & APIs** — routing, validation, serialization, and OpenAPI.
-- **Runtime boundaries** — a framework core separated from platform adapters, with Node.js, Bun, Deno, and Cloudflare Workers in mind.
+| Project | What I'm building |
+| :--- | :--- |
+| **[ilokesto](https://github.com/ilokesto)** | **Small packages. Clear responsibilities.**<br><br>A TypeScript ecosystem for state, forms, UI primitives, and networking. Framework-independent core logic and thin adapters keep the same ideas usable across environments.<br><br>**State & forms** — predictable stores, transitions, and form behavior.<br>**UI** — composable overlays, modals, and toasts.<br>**Networking** — focused fetch utilities.<br><br>[`store`](https://github.com/ilokesto/store) · [`state`](https://github.com/ilokesto/state) · [`form`](https://github.com/ilokesto/form) · [`overlay`](https://github.com/ilokesto/overlay) · [`fetcher`](https://github.com/ilokesto/fetcher) |
+| **[fluo](https://github.com/fluojs/fluo)** | **A standard-first TypeScript backend framework.**<br><br>An exploration of the whole backend application surface, not just routing. Standard decorators and modular boundaries connect the parts of an application.<br><br>**Foundations** — DI, configuration, and reusable modules.<br>**HTTP & APIs** — routing, validation, serialization, and OpenAPI.<br>**Runtimes** — a core separated from platform adapters, with Node.js, Bun, Deno, and Cloudflare Workers in mind. |
 
 <br>
 
@@ -75,11 +60,13 @@ An exploration of the whole backend application surface, not just routing. I use
 
 Projects I've contributed to through code, documentation, and proposed fixes.
 
-- **[stableref](https://github.com/JoviDeCroock/stableref)**
-- **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)**
-- **[senpi](https://github.com/code-yeongyu/senpi)**
-- **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)**
-- **[open-code-review](https://github.com/alibaba/open-code-review)**
+| Project | Focus |
+| :--- | :--- |
+| **[stableref](https://github.com/JoviDeCroock/stableref)** | React hooks |
+| **[zustand-middleware-pipe](https://github.com/zustandjs/zustand-middleware-pipe)** | Zustand middleware |
+| **[senpi](https://github.com/code-yeongyu/senpi)** | Coding agents |
+| **[oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** | Agent orchestration |
+| **[open-code-review](https://github.com/alibaba/open-code-review)** | AI code review |
 
 ## Ideas I keep coming back to
 
