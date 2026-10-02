@@ -49,10 +49,48 @@
 
 ## 만드는 프로젝트
 
-| 프로젝트 | 만드는 것과 설계 방향 |
+### [ilokesto](https://github.com/ilokesto/ilokesto)
+
+**조합할 수 있는 작은 도구, 프레임워크에 묶이지 않는 코어.**
+
+ilokesto는 에스페란토로 ‘도구 상자’를 뜻합니다. 애플리케이션 전체를 책임지는 하나의 라이브러리보다, 프론트엔드에서 반복되는 문제를 각자의 역할이 명확한 TypeScript 라이브러리로 풀어내고자 합니다.
+
+설계의 출발점은 순수 TypeScript 코어와 필요한 만큼의 얇은 프레임워크 바인딩입니다. 패키지는 각자의 책임과 버전을 유지하고, 공통 추상화를 늘리기 전에 일관된 규칙을 먼저 공유합니다. 상태, 폼, UI 동작을 각각 이해하기 쉽게 만들고 여러 프로젝트에서 재사용하는 것이 목표입니다.
+
+패키지는 `@ilokesto/` 스코프로 배포합니다.
+
+| 패키지 | 역할 |
 | :--- | :--- |
-| **[ilokesto](https://github.com/ilokesto)** | **작은 패키지, 명확한 책임.**<br><br>상태, 폼, UI, 네트워크 문제를 다루는 TypeScript 생태계입니다. 프레임워크에 의존하지 않는 코어와 얇은 어댑터로 같은 아이디어를 다양한 환경에서 사용할 수 있도록 만듭니다.<br><br>**상태와 폼** — 예측 가능한 스토어, 상태 전이, 폼 동작.<br>**UI** — 조합 가능한 오버레이, 모달, 토스트.<br>**네트워킹** — 역할이 명확한 fetch 유틸리티.<br><br>[`store`](https://github.com/ilokesto/store) · [`state`](https://github.com/ilokesto/state) · [`form`](https://github.com/ilokesto/form) · [`overlay`](https://github.com/ilokesto/overlay) · [`fetcher`](https://github.com/ilokesto/fetcher) |
-| **[fluo](https://github.com/fluojs/fluo)** | **표준을 우선하는 TypeScript 백엔드 프레임워크.**<br><br>라우팅뿐 아니라 백엔드 애플리케이션을 구성하는 전체 영역을 탐구합니다. 표준 데코레이터와 모듈 경계로 애플리케이션의 구성 요소를 연결합니다.<br><br>**기반** — DI, 설정, 재사용 가능한 모듈.<br>**HTTP와 API** — 라우팅, 검증, 직렬화, OpenAPI.<br>**런타임** — 코어와 플랫폼 어댑터를 분리하고 Node.js, Bun, Deno, Cloudflare Workers를 고려하는 설계. |
+| [store](https://github.com/ilokesto/ilokesto/tree/main/packages/store) | 프레임워크와 독립적인 상태 저장, 갱신, 구독. |
+| [state](https://github.com/ilokesto/ilokesto/tree/main/packages/state) | 상태 조합과 여러 프레임워크를 위한 얇은 바인딩. |
+| [form](https://github.com/ilokesto/ilokesto/tree/main/packages/form) | 폼 상태, 필드 메타데이터, Standard Schema 검증. |
+| [utilinent](https://github.com/ilokesto/ilokesto/tree/main/packages/utilinent) | 반복되는 렌더링 패턴을 위한 작은 선언적 React 컴포넌트. |
+| [overlay](https://github.com/ilokesto/ilokesto/tree/main/packages/overlay) | 오버레이 상태와 생명주기 관리. |
+| [modal](https://github.com/ilokesto/ilokesto/tree/main/packages/modal) | 모달 상호작용. |
+| [toast](https://github.com/ilokesto/ilokesto/tree/main/packages/toast) | 토스트 알림. |
+| [fetcher](https://github.com/ilokesto/ilokesto/tree/main/packages/fetcher) | fetch 기반 네트워크 유틸리티. |
+
+### [fluo](https://github.com/fluojs/fluo)
+
+**표준 우선, 명시적 의존성, 분명한 경계.**
+
+fluo는 TC39 표준 데코레이터와 명시적인 의존성 주입을 바탕으로 만드는 TypeScript 백엔드 프레임워크입니다. 어떤 모듈이 기능을 소유하고, 무엇에 의존하며, 어디까지 책임지는지 코드에서 드러나는 구조를 지향합니다.
+
+레거시 데코레이터 메타데이터에 기대기보다 의존성을 직접 선언하고, 필요한 기능을 패키지 단위로 조합합니다. 프레임워크 코어와 호스트 어댑터를 분리하며, 런타임 지원 범위도 패키지별로 명확히 정의합니다. 편리한 API만큼 예측 가능한 동작 계약, 테스트 가능한 구조, 문서화된 한계를 중요하게 생각합니다.
+
+패키지 이름은 `@fluojs/` 스코프를 사용합니다.
+
+| 영역 | 패키지 |
+| :--- | :--- |
+| 코어 | [core](https://github.com/fluojs/fluo/tree/main/packages/core), [di](https://github.com/fluojs/fluo/tree/main/packages/di), [runtime](https://github.com/fluojs/fluo/tree/main/packages/runtime), [config](https://github.com/fluojs/fluo/tree/main/packages/config), [i18n](https://github.com/fluojs/fluo/tree/main/packages/i18n) |
+| HTTP·API | [http](https://github.com/fluojs/fluo/tree/main/packages/http), [validation](https://github.com/fluojs/fluo/tree/main/packages/validation), [serialization](https://github.com/fluojs/fluo/tree/main/packages/serialization), [openapi](https://github.com/fluojs/fluo/tree/main/packages/openapi), [graphql](https://github.com/fluojs/fluo/tree/main/packages/graphql) |
+| 인증 | [jwt](https://github.com/fluojs/fluo/tree/main/packages/jwt), [passport](https://github.com/fluojs/fluo/tree/main/packages/passport) |
+| 데이터 | [prisma](https://github.com/fluojs/fluo/tree/main/packages/prisma), [drizzle](https://github.com/fluojs/fluo/tree/main/packages/drizzle), [mongoose](https://github.com/fluojs/fluo/tree/main/packages/mongoose), [redis](https://github.com/fluojs/fluo/tree/main/packages/redis), [cache-manager](https://github.com/fluojs/fluo/tree/main/packages/cache-manager) |
+| 메시징 | [microservices](https://github.com/fluojs/fluo/tree/main/packages/microservices), [cqrs](https://github.com/fluojs/fluo/tree/main/packages/cqrs), [event-bus](https://github.com/fluojs/fluo/tree/main/packages/event-bus), [queue](https://github.com/fluojs/fluo/tree/main/packages/queue), [cron](https://github.com/fluojs/fluo/tree/main/packages/cron) |
+| 실시간 | [websockets](https://github.com/fluojs/fluo/tree/main/packages/websockets), [socket.io](https://github.com/fluojs/fluo/tree/main/packages/socket.io), [notifications](https://github.com/fluojs/fluo/tree/main/packages/notifications), [email](https://github.com/fluojs/fluo/tree/main/packages/email), [slack](https://github.com/fluojs/fluo/tree/main/packages/slack), [discord](https://github.com/fluojs/fluo/tree/main/packages/discord) |
+| 운영 | [terminus](https://github.com/fluojs/fluo/tree/main/packages/terminus), [metrics](https://github.com/fluojs/fluo/tree/main/packages/metrics), [throttler](https://github.com/fluojs/fluo/tree/main/packages/throttler) |
+| 어댑터 | [Fastify](https://github.com/fluojs/fluo/tree/main/packages/platform-fastify), [Express](https://github.com/fluojs/fluo/tree/main/packages/platform-express), [Node.js](https://github.com/fluojs/fluo/tree/main/packages/platform-nodejs), [Next.js](https://github.com/fluojs/fluo/tree/main/packages/platform-nextjs), [Bun](https://github.com/fluojs/fluo/tree/main/packages/platform-bun), [Deno](https://github.com/fluojs/fluo/tree/main/packages/platform-deno), [Workers](https://github.com/fluojs/fluo/tree/main/packages/platform-cloudflare-workers) |
+| 도구 | [react](https://github.com/fluojs/fluo/tree/main/packages/react), [cli](https://github.com/fluojs/fluo/tree/main/packages/cli), [testing](https://github.com/fluojs/fluo/tree/main/packages/testing), [vite](https://github.com/fluojs/fluo/tree/main/packages/vite), [studio](https://github.com/fluojs/fluo/tree/main/packages/studio) |
 
 <br>
 

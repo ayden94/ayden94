@@ -49,10 +49,48 @@ In this book, I explore component structure, state management, reusable logic, a
 
 ## What I'm building
 
-| Project | What I'm building |
+### [ilokesto](https://github.com/ilokesto/ilokesto)
+
+**Small tools that compose, with a core that stays independent.**
+
+ilokesto means “toolbox” in Esperanto. I build it as a collection of focused TypeScript libraries for recurring frontend problems, rather than one library that owns the whole application.
+
+The design starts with plain TypeScript cores and thin framework bindings where they are needed. Packages keep their own responsibilities and versions; shared conventions come before shared abstractions. The goal is to make state, forms, and UI behavior understandable on their own and reusable across projects.
+
+Packages are published under `@ilokesto/`.
+
+| Package | Responsibility |
 | :--- | :--- |
-| **[ilokesto](https://github.com/ilokesto)** | **Small packages. Clear responsibilities.**<br><br>A TypeScript ecosystem for state, forms, UI primitives, and networking. Framework-independent core logic and thin adapters keep the same ideas usable across environments.<br><br>**State & forms** — predictable stores, transitions, and form behavior.<br>**UI** — composable overlays, modals, and toasts.<br>**Networking** — focused fetch utilities.<br><br>[`store`](https://github.com/ilokesto/store) · [`state`](https://github.com/ilokesto/state) · [`form`](https://github.com/ilokesto/form) · [`overlay`](https://github.com/ilokesto/overlay) · [`fetcher`](https://github.com/ilokesto/fetcher) |
-| **[fluo](https://github.com/fluojs/fluo)** | **A standard-first TypeScript backend framework.**<br><br>An exploration of the whole backend application surface, not just routing. Standard decorators and modular boundaries connect the parts of an application.<br><br>**Foundations** — DI, configuration, and reusable modules.<br>**HTTP & APIs** — routing, validation, serialization, and OpenAPI.<br>**Runtimes** — a core separated from platform adapters, with Node.js, Bun, Deno, and Cloudflare Workers in mind. |
+| [store](https://github.com/ilokesto/ilokesto/tree/main/packages/store) | Framework-independent state storage, updates, and subscriptions. |
+| [state](https://github.com/ilokesto/ilokesto/tree/main/packages/state) | State composition and thin bindings for multiple frameworks. |
+| [form](https://github.com/ilokesto/ilokesto/tree/main/packages/form) | Form state, field metadata, and Standard Schema validation. |
+| [utilinent](https://github.com/ilokesto/ilokesto/tree/main/packages/utilinent) | Small declarative React components for recurring rendering patterns. |
+| [overlay](https://github.com/ilokesto/ilokesto/tree/main/packages/overlay) | Overlay state and lifecycle management. |
+| [modal](https://github.com/ilokesto/ilokesto/tree/main/packages/modal) | Modal interactions. |
+| [toast](https://github.com/ilokesto/ilokesto/tree/main/packages/toast) | Toast notifications. |
+| [fetcher](https://github.com/ilokesto/ilokesto/tree/main/packages/fetcher) | Fetch-based networking utilities. |
+
+### [fluo](https://github.com/fluojs/fluo)
+
+**Standards first. Explicit composition. Clear boundaries.**
+
+fluo is a TypeScript backend framework built on TC39 standard decorators and explicit dependency injection. I want application structure to be visible in the code: which modules own a feature, which dependencies they use, and where their responsibilities end.
+
+Instead of relying on legacy decorator metadata, fluo declares dependencies explicitly and composes capabilities through packages. The framework core stays separate from host adapters, and runtime support is defined per package rather than assumed. Predictable contracts, testable behavior, and documented limits matter as much as a convenient API.
+
+Package names use the `@fluojs/` scope.
+
+| Area | Packages |
+| :--- | :--- |
+| Core | [core](https://github.com/fluojs/fluo/tree/main/packages/core), [di](https://github.com/fluojs/fluo/tree/main/packages/di), [runtime](https://github.com/fluojs/fluo/tree/main/packages/runtime), [config](https://github.com/fluojs/fluo/tree/main/packages/config), [i18n](https://github.com/fluojs/fluo/tree/main/packages/i18n) |
+| HTTP & APIs | [http](https://github.com/fluojs/fluo/tree/main/packages/http), [validation](https://github.com/fluojs/fluo/tree/main/packages/validation), [serialization](https://github.com/fluojs/fluo/tree/main/packages/serialization), [openapi](https://github.com/fluojs/fluo/tree/main/packages/openapi), [graphql](https://github.com/fluojs/fluo/tree/main/packages/graphql) |
+| Auth | [jwt](https://github.com/fluojs/fluo/tree/main/packages/jwt), [passport](https://github.com/fluojs/fluo/tree/main/packages/passport) |
+| Data | [prisma](https://github.com/fluojs/fluo/tree/main/packages/prisma), [drizzle](https://github.com/fluojs/fluo/tree/main/packages/drizzle), [mongoose](https://github.com/fluojs/fluo/tree/main/packages/mongoose), [redis](https://github.com/fluojs/fluo/tree/main/packages/redis), [cache-manager](https://github.com/fluojs/fluo/tree/main/packages/cache-manager) |
+| Messaging | [microservices](https://github.com/fluojs/fluo/tree/main/packages/microservices), [cqrs](https://github.com/fluojs/fluo/tree/main/packages/cqrs), [event-bus](https://github.com/fluojs/fluo/tree/main/packages/event-bus), [queue](https://github.com/fluojs/fluo/tree/main/packages/queue), [cron](https://github.com/fluojs/fluo/tree/main/packages/cron) |
+| Realtime | [websockets](https://github.com/fluojs/fluo/tree/main/packages/websockets), [socket.io](https://github.com/fluojs/fluo/tree/main/packages/socket.io), [notifications](https://github.com/fluojs/fluo/tree/main/packages/notifications), [email](https://github.com/fluojs/fluo/tree/main/packages/email), [slack](https://github.com/fluojs/fluo/tree/main/packages/slack), [discord](https://github.com/fluojs/fluo/tree/main/packages/discord) |
+| Operations | [terminus](https://github.com/fluojs/fluo/tree/main/packages/terminus), [metrics](https://github.com/fluojs/fluo/tree/main/packages/metrics), [throttler](https://github.com/fluojs/fluo/tree/main/packages/throttler) |
+| Adapters | [Fastify](https://github.com/fluojs/fluo/tree/main/packages/platform-fastify), [Express](https://github.com/fluojs/fluo/tree/main/packages/platform-express), [Node.js](https://github.com/fluojs/fluo/tree/main/packages/platform-nodejs), [Next.js](https://github.com/fluojs/fluo/tree/main/packages/platform-nextjs), [Bun](https://github.com/fluojs/fluo/tree/main/packages/platform-bun), [Deno](https://github.com/fluojs/fluo/tree/main/packages/platform-deno), [Workers](https://github.com/fluojs/fluo/tree/main/packages/platform-cloudflare-workers) |
+| Tooling | [react](https://github.com/fluojs/fluo/tree/main/packages/react), [cli](https://github.com/fluojs/fluo/tree/main/packages/cli), [testing](https://github.com/fluojs/fluo/tree/main/packages/testing), [vite](https://github.com/fluojs/fluo/tree/main/packages/vite), [studio](https://github.com/fluojs/fluo/tree/main/packages/studio) |
 
 <br>
 
